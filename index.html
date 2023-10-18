@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="hero"></div>
+    <div class="hero">
+    </div>
     <div class="content">
-        <div class="text">
-            <p>This is not a real online service! You know you need something<br>
+        <div class="description">
+            <p>This is not a real online service! You know you need something
             like this in your life to help you realise your deepest dreams.
             Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <form class="sign-up">
+        <form class="sign-up-form">
             <div class="container">
-                <p>Let's do this!</p>
-                <fieldset class="name">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name">
-                </fieldset>
-                <fieldset class="info">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="first-name">
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="number" name="phone-number">
-                </fieldset>
-                <fieldset class="password">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password">
-                </fieldset>
+                    <div>Let's do this!</div>
+                    <fieldset class="name">
+                        <div>
+                            <label for="first-name">FIRST NAME</label><br>
+                            <input type="text" name="first-name">
+                        </div>
+                        <div>
+                            <label for="last-name">LAST NAME</label><br>
+                            <input type="text" name="last-name">
+                        </div>
+                    </fieldset>
+                    <fieldset class="info">
+                        <div>
+                            <label for="email">EMAIL</label><br>
+                            <input type="email" name="first-name">
+                        </div>
+                        <div>
+                            <label for="phone-number">PHONE NUMBER</label><br>
+                            <input type="number" name="phone-number">
+                        </div>
+                    </fieldset>
+                    <fieldset class="password">
+                        <div>
+                            <label for="password">PASSWORD</label><br>
+                            <input type="password" name="password">
+                        </div>
+                        <div>
+                            <label for="confirm-password">CONFIRM PASSWORD</label><br>
+                            <input type="password" name="confirm-password">
+                        </div>
+                    </fieldset>
             </div>
-            <label for="create-account">Create Account</label>
-            <input type="submit" name="create-account" value="Create Account">
+            <div class="submit-form">
+                <label for="create-account"></label>
+                <input type="submit" name="create-account" value="Create Account">
+            </div>
         </form>
         </div>
     </div>

@@ -1,0 +1,80 @@
+:root {
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0;
+    background: #f5f8fa;
+}
+
+.hero {
+    width: 40%;
+    height: inherit;
+    background-image: url("img/space.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 60%;
+}
+
+
+
+.content > * {
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.description {
+    width: min(514px, 100%);
+}
+
+.sign-up-form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    gap: 32px;
+}
+
+.sign-up-form > * {
+    padding-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left:20px;
+    padding-block: 20px;
+    background-color: white;
+}
+
+fieldset {
+    display: flex;
+    border: 0;
+    gap: 64px;
+    padding: 0;
+    margin: 0;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    width: fit-content;
+}
