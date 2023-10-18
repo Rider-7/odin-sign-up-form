@@ -1,6 +1,9 @@
 :root {
     font-family: sans-serif;
     font-weight: bolder;
+    font-size: x-large;
+
+    --content-padding-left: 64px;
 }
 
 body {
@@ -12,7 +15,7 @@ body {
 }
 
 .hero {
-    width: 40%;
+    width: 35%;
     height: inherit;
     background-image: url("img/space.jpg");
     background-color: #cccccc;
@@ -26,19 +29,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    width: 60%;
+    width: 65%;
 }
 
 
 
 .content > * {
     box-sizing: border-box;
-    padding-left: 20px;
+    padding-left: var(--content-padding-left);
     width: 100%;
 }
 
 .description {
-    width: min(514px, 100%);
+    width: 800px;
 }
 
 .sign-up-form {
@@ -51,14 +54,14 @@ body {
 }
 
 .sign-up-form > * {
-    padding-left: 20px;
+    padding-left: var(--content-padding-left);
 }
 
 .container {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-left:20px;
+    padding-left:var(--content-padding-left);
     padding-block: 20px;
     background-color: white;
 }
