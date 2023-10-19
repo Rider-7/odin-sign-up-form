@@ -4,6 +4,12 @@
     font-size: x-large;
 
     --content-padding-left: 64px;
+    --primary-color: #374D58;
+    --primary-click-color: #293A42;
+    --primary-text-color: #E8E5F0;
+    
+    --shadow-color: #808080;
+    --shadow-click-color: #505050;
 }
 
 body {
@@ -44,6 +50,7 @@ body {
     width: 800px;
 }
 
+/* Sign-up Section */
 .sign-up-form {
 
     display: flex;
@@ -51,6 +58,7 @@ body {
     padding: 0px;
     width: 100%;
     gap: 32px;
+
 }
 
 .sign-up-form > * {
@@ -64,6 +72,7 @@ body {
     padding-left:var(--content-padding-left);
     padding-block: 20px;
     background-color: white;
+    box-shadow: 0px 3px 6px var(--shadow-color);
 }
 
 fieldset {
@@ -72,12 +81,37 @@ fieldset {
     gap: 64px;
     padding: 0;
     margin: 0;
+    font-size: x-small;
 }
 
-.submit-form {
-    display: flex;
-    flex-direction: column;
-
-    height: fit-content;
-    width: fit-content;
+/* Submit Section */
+.submit-form > * {
+    font-size: medium;
 }
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    font-size: medium;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px var(--shadow-color);
+    height: 50px;
+    width: 210px;
+}
+
+input[type="submit"]:hover {
+    cursor:pointer;
+}
+
+input[type="submit"]:active {
+    background-color: var(--primary-click-color);
+    box-shadow: 0px 3px 6px var(--shadow-click-color);
+    transform: translateY(2px);
+  }
