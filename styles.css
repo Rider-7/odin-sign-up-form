@@ -4,12 +4,15 @@
     font-size: x-large;
 
     --content-padding-left: 64px;
-    --primary-color: #374D58;
+    --primary-color: #f5f8fa;
+    --primary-accent-color: #374D58;
     --primary-click-color: #293A42;
     --primary-text-color: #E8E5F0;
     
     --shadow-color: #808080;
     --shadow-click-color: #505050;
+
+    --primary-border-radius: 10px;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
     flex-direction: row;
     min-height: 100vh;
     margin: 0;
-    background: #f5f8fa;
+    background: var(--primary-color);
 }
 
 .hero {
@@ -75,6 +78,22 @@ body {
     box-shadow: 0px 3px 6px var(--shadow-color);
 }
 
+.container input {
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #dedede;
+}
+
+.container input:focus {
+    outline: none;
+    border-color: #5390d2;
+}
+
+.container input:user-invalid {
+    border-color: #d25353;
+}
+
 fieldset {
     display: flex;
     border: 0;
@@ -90,17 +109,17 @@ fieldset {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--primary-accent-color);
     text-decoration: none;
 }
 
 input[type="submit"] {
     font-size: medium;
     font-weight: bold;
-    background-color: var(--primary-color);
+    background-color: var(--primary-accent-color);
     color: var(--primary-text-color);
     border: 0;
-    border-radius: 10px;
+    border-radius: var(--primary-border-radius);
     box-shadow: 0px 3px 6px var(--shadow-color);
     height: 50px;
     width: 210px;
