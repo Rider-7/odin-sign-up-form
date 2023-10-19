@@ -25,6 +25,9 @@ body {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-width: 35%;
     min-height: 100%;
     background-image: url("img/space.jpg");
@@ -32,6 +35,29 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+.logo-title {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 16%;
+    max-width: 100%;
+    color: #FFFFFF;
+    background-color: #1a1a1a80;
+    text-align: center;
+    padding:10px;
+}
+
+.logo-title img {
+    display: inline;
+    width: 30%;
+
+}
+
+.logo-title span {
+    font-size: 8vmax;
 }
 
 .content {
